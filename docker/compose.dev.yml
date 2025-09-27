@@ -1,0 +1,46 @@
+services:
+  frontend-dev:
+    container_name: frontend-dev
+    ports:
+      - "5173:5173"
+    build:
+      context: ../frontend
+      dockerfile: dockerfile.dev
+    restart: always
+    volumes:
+     - ../frontend:/app
+
+  nginx-dev:
+    container_name: nginx-dev
+    ports:
+      - "81:81"
+    build:
+      context: ../nginx
+      dockerfile: dockerfile.dev
+    depends_on:
+      - frontend-dev
+    volumes:
+      - ../nginx/nginx.dev.conf:/etc/nginx/conf.d/nginx.conf
+    restart: always
+  
+  # backend-dev:
+  #   ports:
+  #     - "5000:5000"
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   restart: always
+  #   networks:
+  #     default:
+  #       aliases:
+  #         - collection-db-express-server
+  
+  # dev-redis:
+  #   container_name: redis
+  #   image: redis:latest
+  #   restart: always
+  #   command: redis-server
+
+networks:
+  default:
+    name: ${NETWORK_NAME_DEV}
