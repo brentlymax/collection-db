@@ -1,5 +1,5 @@
-ifneq (,$(wildcard ./app.env))
-	include ./app.env
+ifneq (,$(wildcard ./.env))
+	include ./.env
 export
 endif
 
