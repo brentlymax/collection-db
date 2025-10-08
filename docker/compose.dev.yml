@@ -1,4 +1,14 @@
 services:
+    nginx-dev:
+        container_name: nginx-dev
+        ports:
+            - '81:81'
+        image: nginx:stable
+        volumes:
+            - ../nginx/nginx.dev.conf:/etc/nginx/conf.d/nginx.conf
+        restart: always
+        command: '/bin/sh -c ''while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g "daemon off;"'''
+
     frontend-dev:
         container_name: frontend-dev
         ports:
@@ -8,19 +18,6 @@ services:
             dockerfile: dockerfile.dev
         volumes:
             - ../frontend:/app
-        restart: always
-
-    nginx-dev:
-        container_name: nginx-dev
-        ports:
-            - '81:81'
-        build:
-            context: ../nginx
-            dockerfile: dockerfile.dev
-        volumes:
-            - ../nginx/nginx.dev.conf:/etc/nginx/conf.d/nginx.conf
-        depends_on:
-            - frontend-dev
         restart: always
 
     backend-dev:
