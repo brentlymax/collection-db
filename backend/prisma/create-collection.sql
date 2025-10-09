@@ -1,19 +1,19 @@
-DROP TABLE IF EXISTS `comics_graded`;
-CREATE TABLE `comics_graded` (
-	title			varchar(250) not null,
-	issue			varchar(10) not null,
-	pub_month		smallint,
-	pub_year		smallint,
-	publisher		varchar(50) not null,
-	grade			decimal(4, 2),
-	page_qual		varchar(50) not null,
-	grader			varchar(20) not null,
-	cert_num		varchar(20) not null primary key,
-	label_type		varchar(50) not null,
-	variant			varchar(250),
-	key_notes		varchar(250),
-	signed_by		varchar(250),
-	pedigree		varchar(250)
+DROP TABLE IF EXISTS `graded_comics`;
+CREATE TABLE `graded_comics` (
+	title				varchar(250) not null,
+	issue				varchar(10) not null,
+	published_month		smallint,
+	published_year		smallint,
+	publisher			varchar(50) not null,
+	grade				decimal(4, 2),
+	page_quality		varchar(50) not null,
+	grader				varchar(20) not null,
+	cert_number			varchar(20) not null primary key,
+	label_type			varchar(50) not null,
+	variant				varchar(250),
+	key_notes			varchar(250),
+	signed_by			varchar(250),
+	pedigree			varchar(250)
 );
 
 -- DROP TABLE IF EXISTS `comics_ungraded`;

@@ -1,0 +1,9 @@
+.table-error,
+.table-loading {
+	padding: 2rem 0rem;
+}
+
+.table-box {
+	height: 100%;
+	width: 100%;
+}

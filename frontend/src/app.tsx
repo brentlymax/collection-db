@@ -11,25 +11,43 @@ import './app.css'
 function App() {
 	return (
 		<BrowserRouter>
-			<nav style={{ display: 'flex', gap: '10px' }}>
-				<Link to='/'>Home</Link>
-				<Link to='/about'>About</Link>
-				<Link to='/art'>Art</Link>
-				<Link to='/comics'>Comics</Link>
-				<Link to='/contact'>Contact</Link>
-				<Link to='/magic'>Magic</Link>
-				<Link to='/pokemon'>Pokemon</Link>
-			</nav>
+			<div className='navigation-wrapper'>
+				<nav className='navigation-bar'>
+					<Link className='navigation-link' to='/'>
+						Home
+					</Link>
+					<Link className='navigation-link' to='/about'>
+						About
+					</Link>
+					<Link className='navigation-link' to='/art'>
+						Art
+					</Link>
+					<Link className='navigation-link' to='/comics'>
+						Comics
+					</Link>
+					<Link className='navigation-link' to='/contact'>
+						Contact
+					</Link>
+					<Link className='navigation-link' to='/magic'>
+						Magic
+					</Link>
+					<Link className='navigation-link' to='/pokemon'>
+						Pokemon
+					</Link>
+				</nav>
+			</div>
 
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/art' element={<Art />} />
-				<Route path='/comics' element={<Comics />} />
-				<Route path='/contact' element={<Contact />} />
-				<Route path='/magic' element={<Magic />} />
-				<Route path='/pokemon' element={<Pokemon />} />
-			</Routes>
+			<div className='routes-wrapper'>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/art' element={<Art />} />
+					<Route path='/comics' element={<Comics />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/magic' element={<Magic />} />
+					<Route path='/pokemon' element={<Pokemon />} />
+				</Routes>
+			</div>
 		</BrowserRouter>
 	)
 }

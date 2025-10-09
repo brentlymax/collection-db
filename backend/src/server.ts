@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/comics/graded', async (req, res) => {
-	const gradedComicData = await prisma.comics_graded.findMany()
+	const gradedComicData = await prisma.graded_comics.findMany()
 	res.json(gradedComicData)
 })
 

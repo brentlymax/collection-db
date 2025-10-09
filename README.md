@@ -46,8 +46,8 @@ Database of my collections. Written as a MERN stack.
 
 ## Create collection db and insert into tables
 - cd backend
-- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/collection-create.sql
-- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/comics-graded-insert.sql
+- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/create-collection.sql
+- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/insert-graded-comics.sql
 - npx prisma db pull npx prisma generate
 
 ## Enter collection db container for querying
