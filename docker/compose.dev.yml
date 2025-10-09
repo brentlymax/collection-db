@@ -30,6 +30,28 @@ services:
         volumes:
             - ../backend:/app
         restart: always
+        depends_on:
+            - db-dev
+        environment:
+            DB_HOST: db-dev
+            DB_USER: root
+            DB_PASSWORD: collection_db_1988
+            DB_NAME: collection
+
+    db-dev:
+        container_name: db-dev
+        ports:
+            - '3306:3306'
+        image: mariadb:latest
+        volumes:
+            - collection_data:/var/lib/mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: collection_db_1988
+            MYSQL_DATABASE: collection
+
+volumes:
+    collection_data:
 
 networks:
     default:

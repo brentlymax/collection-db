@@ -1,16 +1,21 @@
 import express from 'express'
+import cors from 'cors'
+import { PrismaClient } from '@prisma/client'
 
 const app = express()
 const port = 3000
-// const host = '0.0.0.0'
-// const host = '172.31.26.153'
+const prisma = new PrismaClient()
+
+app.use(express.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
 	res.send('Hello from the B-Man!')
 })
 
-app.get('/test/data', (req, res) => {
-	res.send('Test data')
+app.get('/comics/graded', async (req, res) => {
+	const gradedComicData = await prisma.comics_graded.findMany()
+	res.json(gradedComicData)
 })
 
 app.listen(port, () => {

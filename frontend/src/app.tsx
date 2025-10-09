@@ -6,7 +6,7 @@ import Contact from './pages/contact'
 import Home from './pages/home'
 import Magic from './pages/magic'
 import Pokemon from './pages/pokemon'
-import './App.css'
+import './app.css'
 
 function App() {
 	return (

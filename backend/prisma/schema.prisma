@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model comics_graded {
+  title      String   @db.VarChar(250)
+  issue      String   @db.VarChar(10)
+  pub_month  Int?     @db.SmallInt
+  pub_year   Int?     @db.SmallInt
+  publisher  String   @db.VarChar(50)
+  grade      Decimal? @db.Decimal(4, 2)
+  page_qual  String   @db.VarChar(50)
+  grader     String   @db.VarChar(20)
+  cert_num   String   @id @db.VarChar(20)
+  label_type String   @db.VarChar(50)
+  variant    String?  @db.VarChar(250)
+  key_notes  String?  @db.VarChar(250)
+  signed_by  String?  @db.VarChar(250)
+  pedigree   String?  @db.VarChar(250)
+}

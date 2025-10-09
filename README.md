@@ -41,5 +41,15 @@ Database of my collections. Written as a MERN stack.
 
 ## Generate Certbot Certificates
 - ./nginx/generate_ssl_cert.sh
-- NOTE: This should place certs in /etc/letsencrypt/live/*
-- NOTE: compose.prod.yml copies /etc/letsencrypt/* into both prod containers
+- NOTE: this should place certs in /etc/letsencrypt/live/\*
+- NOTE: compose.prod.yml copies /etc/letsencrypt/\* into both prod containers
+
+## Create collection db and insert into tables
+- cd backend
+- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/collection-create.sql
+- docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/comics-graded-insert.sql
+- npx prisma db pull npx prisma generate
+
+## Enter collection db container for querying
+- docker exec -it db-dev mariadb -uroot -pcollection_db_1988
+- use collection
