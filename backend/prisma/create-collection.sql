@@ -5,7 +5,7 @@ CREATE TABLE `graded_comics` (
 	published_month		smallint,
 	published_year		smallint,
 	publisher			varchar(50) not null,
-	grade				decimal(4, 2),
+	grade				varchar(10),
 	page_quality		varchar(50) not null,
 	grader				varchar(20) not null,
 	cert_number			varchar(20) not null primary key,

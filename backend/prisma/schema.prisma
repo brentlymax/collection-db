@@ -3,23 +3,24 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider  = "mysql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model graded_comics {
-  title      String   @db.VarChar(250)
-  issue      String   @db.VarChar(10)
-  published_month  Int?     @db.SmallInt
-  published_year   Int?     @db.SmallInt
-  publisher  String   @db.VarChar(50)
-  grade      Decimal? @db.Decimal(4, 2)
-  page_quality  String   @db.VarChar(50)
-  grader     String   @db.VarChar(20)
-  cert_number   String   @id @db.VarChar(20)
-  label_type String   @db.VarChar(50)
-  variant    String?  @db.VarChar(250)
-  key_notes  String?  @db.VarChar(250)
-  signed_by  String?  @db.VarChar(250)
-  pedigree   String?  @db.VarChar(250)
+  title           String  @db.VarChar(250)
+  issue           String  @db.VarChar(10)
+  published_month Int?    @db.SmallInt
+  published_year  Int?    @db.SmallInt
+  publisher       String  @db.VarChar(50)
+  grade           String? @db.VarChar(10)
+  page_quality    String  @db.VarChar(50)
+  grader          String  @db.VarChar(20)
+  cert_number     String  @id @db.VarChar(20)
+  label_type      String  @db.VarChar(50)
+  variant         String? @db.VarChar(250)
+  key_notes       String? @db.VarChar(250)
+  signed_by       String? @db.VarChar(250)
+  pedigree        String? @db.VarChar(250)
 }

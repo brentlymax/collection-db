@@ -8,7 +8,7 @@ function GradedComicsTable() {
 	type GradedComic = {
 		title: string
 		issue: number
-		grade: number
+		grade: string
 		page_quality: string
 		grader: string
 		cert_number: string
@@ -35,8 +35,7 @@ function GradedComicsTable() {
 		},
 		{
 			field: 'page_quality',
-			headerName: 'Page Quality',
-			type: 'number'
+			headerName: 'Page Quality'
 		},
 		{
 			field: 'grader',
