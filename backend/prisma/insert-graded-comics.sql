@@ -32,11 +32,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Secret Wars", "1", 7, 2015, "Marvel Comics", "9.8", "white", "CGC", "0260755026", "blue", "Cheung Variant Cover", null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Amazing Spider-Man", "798", 6, 2018, "Marvel Comics", "9.8", "white", "CGC", "0348754001", "blue", "Ross Virgin Edition", "1st Norman Osborn as the Red Goblin", null, null);
 
 INSERT INTO `graded_comics`
@@ -48,21 +43,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Marvel Legacy", "1", 11, 2017, "Marvel Comics", "9.8", "white", "CGC", "1243531021", "blue", "Ross Variant Cover", "1st appearance of the 1,000,000 BC Avengers. Return of Wolverine.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Marvel Legacy", "1", 11, 2017, "Marvel Comics", "9.8", "white", "CGC", "1243941019", "blue", "Lenticular Cover", "1st appearance of the 1,000,000 BC Avengers. Return of Wolverine.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Faithless", "1", 4, 2019, "Boom! Studios", "9.8", "white", "CGC", "2047349010", "blue", "Sad Lemon Comics Edition", "Virgin cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Vampirella", "14", null, 2020, "Dynamite Entertainment", "9.8", "white", "CGC", "3764920003", "blue", "Momoko Virgin Edition", null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -92,17 +72,7 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Infinite Frontier", "0", 5, 2021, "D.C. Comics", "9.8", "white", "CGC", "3846421019", "blue", null, "Wraparound cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Clive Barker's Hellraiser", "20", null, 1993, "Marvel/Epic Comics", "9.8", "white", "CGC", "4131425008", "blue", null, "Tristan Schane cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Star Spangled Comics", "1", 5, 1999, "D.C. Comics", "9.8", "white", "CGC", "2009634025", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -117,22 +87,12 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Infinite Frontier", "0", 6, 2021, "D.C. Comics", "9.8", "white", "CGC", "3880699003", "blue", "Second Printing", null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Clive Barker's Hellraiser", "11", null, 1992, "Marvel/Epic Comics", "9.8", "white", "CGC", "4163873016", "blue", null, "Tom Vincent cover.", null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Uncanny X-Men", "221", 9, 1987, "Marvel Comics", "9.8", "white", "CGC", "4093281003", "blue", null, "1st appearance of Mister Sinister (Nathaniel Essex). Marauders appearance.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman", "71", 9, 1995, "D.C./Vertigo Comics", "9.8", "white", "CGC", "3934056010", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -177,11 +137,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("ENIAC", "1", 3, 2021, "Bad Idea", "9.8", "white", "CGC", "3855835003", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Spawn", "1", 5, 1992, "Image Comics", "9.8", "white", "CGC", "1284264002", "yellow", null, "1st appearance of Spawn (Al Simmons). Pitt pin-up by Dale Keown & Spawn pin-up by George Perez. Pull-out Spawn poster", "Todd McFarlane", null);
 
 INSERT INTO `graded_comics`
@@ -207,11 +162,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Army of Darkness", "13", null, 2006, "Dynamite Entertainment", "9.8", "white", "CGC", "0145002016", "blue", null, "4 different covers exist, 1 by Sharpe, 1 by Blanco, 1 by Nguyen & 1 by Phillips. Marvel Zombies cameo.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Army of Darkness", "2", 12, 1992, "Dark Horse Comics", "9.8", "white", "CGC", "4099668009", "blue", null, "Movie adaptation. Article by Kurt Busiek.", null, null);
 
 INSERT INTO `graded_comics`
@@ -222,47 +172,12 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Army of Darkness: 1979", "1", null, 2021, "Dynamite Entertainment", "9.8", "white", "CGC", "3984242001", "blue", "Variant Cover U", null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Uncanny X-Men", "191", 3, 1985, "Marvel Comics", "9.8", "white", "CGC", "2076665002", "blue", null, "1st appearance of Nimrod. New Mutants, Spider-Man, Avengers, Doctor Strang, Selene & Kulan Gath appearance.", null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Dark Days: The Forge", "1", 8, 2017, "D.C. Comics", "9.8", "white", "CGC", "1474938014", "blue", null, "Jim Lee & Scott Williams cover. Foil cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Dark Days: The Casting", "1", 9, 2017, "D.C. Comics", "9.8", "white", "CGC", "1242435023", "blue", null, "Jim Lee & Scott Williams cover. Foil cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Dark Days: The Forge", "1", 8, 2017, "D.C. Comics", "9.8", "white", "CGC", "1233978002", "blue", "Convention Edition", "Andy Kubert cover. Foil cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Dark Nights: Metal", "5", 3, 2018, "D.C. Comics", "9.8", "white", "CGC", "1472622023", "blue", "Plaent Comicon Edition D", "Planet Comicon 2018 exclusive. Virgin cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Dark Nights: Metal", "1", 10, 2017, "D.C. Comics", "9.8", "white", "CBCS", "17-34D1D80-127", "blue", "Mattina Ultimate Edition", "The entire print run was verified by CBCS, and was reduced to 250 9.8 graded copies. The accepted industry practice of complimentary overprint did take place. Number 127 of 250.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman Mystery Theatre", "1", 4, 1993, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2071593020", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Just Imagine Stan Lee Creating Sandman", "nn", null, 2002, "D.C. Comics", "9.8", "white", "CGC", "2022976008", "blue", null, "Pin-up by Adam Hughes on back cover.", null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -308,11 +223,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Absolute Sandman Special Edition", "1", null, 2006, "D.C./Vertigo Comics", "9.8", "white", "CGC", "3712240006", "blue", null, "Preview of the recolored and remastered oversized volume.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Locke & Key/The Sandman: Hell & Gone", "1", 4, 2021, "IDW/D.C. Comics", "9.8", "white", "CGC", "3838346002", "blue", "Big Time Collectibles Edition", "Virgin cover.", null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -377,11 +287,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Justice Society of America", "5", 6, 2007, "D.C. Comics", "9.8", "white", "CGC", "2036917020", "blue", null, "Superman, Batman, Red Tornado, Geo-Force, Dream Girl, Wildfire & Doctor Destiny appearance.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Sandman", "75", 3, 1996, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2016962005", "blue", "Second Printing", "Pull-out poster included. Last issue.", null, null);
 
 INSERT INTO `graded_comics`
@@ -408,11 +313,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Sandman Special", "1", null, 1991, "D.C./Vertigo Comics", "9.8", "white", "CGC", "0942344013", "blue", null, "Pin-ups by Craig Russell, Simon Bisley, Sergio Aragones & Barry Windsor-Smith. Glow-in-the-dark cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman", "58", 3, 1994, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2024988007", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -447,11 +347,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Sandman", "15", 4, 1990, "D.C./Vertigo Comics", "9.8", "white", "CGC", "0299713014", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Sandman", "68", 5, 1995, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2024988018", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
@@ -463,11 +358,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Sandman", "13", 2, 1990, "D.C./Vertigo Comics", "9.8", "white", "CGC", "3729440002", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman", "16", 6, 1990, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2011046023", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -487,22 +377,7 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Sandman", "53", 9, 1993, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2011045004", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Sandman", "25", 4, 1991, "D.C./Vertigo Comics", "9.8", "white", "CGC", "3780158014", "blue", null, "Season of Mists part 4.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman", "44", 12, 1992, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2058733014", "blue", null, "Delirium appearance.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman", "59", 4, 1994, "D.C./Vertigo Comics", "9.8", "white", "CGC", "2004456021", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -742,27 +617,7 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Infinite Frontier", "0", 5, 2021, "D.C. Comics", "9.8", "white", "CGC", "3863617013", "blue", "Variant Cover", null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Swamp Thing Annual", "4", null, 1988, "D.C. Comics", "9.8", "white", "CGC", "2082766022", "blue", null, "John Totleben cover. Batman appearance.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Swamp Thing", "129", 3, 1993, "D.C./Vertigo Comics", "9.8", "white", "CGC", "0717554021", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Swamp Thing", "0", 11, 2012, "D.C. Comics", "9.8", "white", "CGC", "0201577063", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Swamp Thing", "2", 12, 2011, "D.C. Comics", "9.8", "white", "CGC", "0189294012", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -773,16 +628,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Swamp Thing", "10", 8, 2012, "D.C. Comics", "9.8", "white", "CGC", "0195393003", "blue", null, "Swamp Thing #10 (1974) cover swipe.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("DC Nation Presents DC Future State", "nn", 1, 2021, "D.C. Comics", "9.8", "white", "CGC", "3829131010", "blue", null, "Wraparound cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Swamp Thing", "136", 10, 1993, "D.C./Vertigo Comics", "9.8", "white", "CGC", "3807089010", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -853,11 +698,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Clive Barker's Hellraiser Dark Holiday Special", "1", null, 1992, "Marvel/Epic Comics", "9.8", "white", "CGC", "4163886018", "blue", null, "Christmas cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Night Nurse", "1", 7, 2015, "Marvel Comics", "9.8", "white", "CBCS", "21-2558528-030", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -978,11 +818,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Scarlet Witch", "3", 5, 2023, "Marvel Comics", "9.8", "white", "CGC", "4226122018", "blue", "Variant Edition", "Timeless variant cover. Virgin cover.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Sandman Universe: Nightmare Country", "1", 6, 2022, "D.C. Comics", "9.8", "white", "CGC", "4117981014", "blue", null, null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
