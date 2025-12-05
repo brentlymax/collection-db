@@ -47,6 +47,11 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
+	("DC Nation Presents DC Future State", "nn", 1, 2021, "D.C. Comics", "9.8", "white", "CGC", "3829131010", "blue", null, "Wraparound cover.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
 	("Legend of Zelda", "1", null, 1990, "Valiant", "9.8", "white", "CGC", "4113772007", "blue", null, "1st Valiant black/red octagram logo.", null, null);
 
 INSERT INTO `graded_comics`
