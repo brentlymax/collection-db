@@ -642,11 +642,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Spider-Gwen", "1", 4, 2015, "Marvel Comics", "9.8", "white", "CGC", "1994947007", "blue", "Young Variant Cover", null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Hellboy: Seed of Destruction", "3", 5, 1994, "Dark Horse Comics", "9.8", "white", "CGC", "1396705007", "blue", null, "Monkeyman & O'Brien back-up story by Art Adams.", null, null);
 
 INSERT INTO `graded_comics`
@@ -673,11 +668,6 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Saga of the Swamp Thing", "43", 12, 1985, "D.C. Comics", "9.8", "white", "CGC", "2082441019", "blue", null, null, null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Gwen Stacy", "1", 4, 2020, "Marvel Comics", "9.8", "white", "CGC", "3801511004", "blue", "Campbell Variant Cover", null, null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
