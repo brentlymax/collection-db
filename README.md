@@ -34,6 +34,7 @@ Database of my collections. Written as a MERN stack.
 ## Run Development
 - make -C docker dev-up
 - make -C docker dev-down
+- NOTE: make sure to forward ports 3000 (backend) and 5173 (frontend)
 
 ## Run Production
 - make -C docker prod-up
