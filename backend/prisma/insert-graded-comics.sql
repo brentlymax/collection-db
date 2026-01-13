@@ -963,3 +963,13 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Journey Into Fear", "1", 6, 2025, "Cow-Abunga Comics", "9.8", "white", "CGC", "4621651020", "blue", "Dicks Lament Edition", "Reprints Journey Into Fear #1 (5/51). Manufactured with 3/50 printed on cover.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Clive Barker's Hellraiser", "3", null, 1990, "Marvel/Epic Comics", "9.8", "white", "CGC", "4644587012", "blue", null, null, null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Clive Barker's Hellraiser", "5", null, 1991, "Marvel/Epic Comics", "9.8", "white", "CGC", "4451175007", "blue", null, null, null, null);
