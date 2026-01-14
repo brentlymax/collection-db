@@ -79,7 +79,7 @@ function GradedComicsTable() {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					'http://localhost:3000/comics/graded'
+					'http://localhost:3001/comics/graded'
 				)
 				if (!response.ok) {
 					throw new Error(`${response.status}`)
