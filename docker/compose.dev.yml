@@ -23,7 +23,7 @@ services:
     backend-dev:
         container_name: backend-dev
         ports:
-            - '3000:3000'
+            - '3001:3000'
         build:
             context: ../backend
             dockerfile: dockerfile.dev
@@ -41,7 +41,7 @@ services:
     db-dev:
         container_name: db-dev
         ports:
-            - '3306:3306'
+            - '3307:3306'
         image: mariadb:latest
         volumes:
             - collection_data:/var/lib/mysql

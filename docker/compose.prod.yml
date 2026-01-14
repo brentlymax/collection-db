@@ -32,7 +32,24 @@ services:
             dockerfile: dockerfile.prod
         volumes:
             - ../backend:/app
+            - /etc/letsencrypt:/etc/letsencrypt
         restart: always
+
+    db-prod:
+        container_name: db-prod
+        ports:
+            - '3306:3306'
+        image: mariadb:latest
+        volumes:
+            - collection_data:/var/lib/mysql
+            - /etc/letsencrypt:/etc/letsencrypt
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: collection_db_1988
+            MYSQL_DATABASE: collection
+
+volumes:
+    collection_data:
 
 networks:
     default:
