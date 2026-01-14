@@ -41,7 +41,7 @@ services:
     db-dev:
         container_name: db-dev
         ports:
-            - '3306:3306'
+            - '3307:3306'
         image: mariadb:latest
         volumes:
             - collection_data:/var/lib/mysql
