@@ -157,11 +157,6 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Fantastic Four", "232", 7, 1981, "Marvel Comics", "9.6", "white", "CGC", "0901006047", "blue", null, "1st full John Byrne issue. Dr. Strange cameo.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Spider-Man", "1", 8, 1990, "Marvel Comics", "9.8", "white", "CBCS", "0005423-AA-031", "blue", "Silver Variant", "Lizard appearance. Metallic silver ink cover.", null, null);
 
 INSERT INTO `graded_comics`
@@ -422,22 +417,7 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("New Teen Titans Annual", "2", null, 1983, "D.C. Comics", "9.8", "white", "CGC", "0295341024", "blue", null, "1st appearance of Vigilante (Adrian Chase), Chesire, Scorcher, Slasher, Spear, Bazooka & Tanker.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
 	("Tales of the New Teen Titans", "1", 6, 1982, "D.C. Comics", "9.8", "white", "CGC", "1132694084", "blue", null, "Origin of Cyborg. Limited series.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Teen Titans", "20", 9, 2018, "D.C. Comics", "9.8", "white", "CGC", "1995074022", "blue", null, "1st full appearance of Crush. Djinn & Roundhouse.", null, null);
-
-INSERT INTO `graded_comics`
-	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
-	VALUES
-	("Vigilante", "1", 11, 1983, "D.C. Comics", "9.8", "white", "CGC", "0204691018", "blue", null, "Origin of the Vigilante (Adrian Chase).", null, null);
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
