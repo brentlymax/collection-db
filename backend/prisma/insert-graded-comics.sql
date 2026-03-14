@@ -429,6 +429,12 @@ INSERT INTO `graded_comics`
 	VALUES
 	("New Teen Titans Annual", "2", null, 1986, "D.C. Comics", "9.8", "white", "CGC", "1032272007", "blue", null, "Origin of Brother Blood. Doctor Light (Kimiyo Hoshi) appearance.", null, null);
 
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Vigilante", "1", 11, 1983, "D.C. Comics", "9.8", "white", "CGC", "0204691018", "blue", null, "Origin of the Vigilante (Adrian Chase).", null, null);
+
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
