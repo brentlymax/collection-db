@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 	res.send('Hello from the B-Man!')
 })
 
-app.get('/comics/graded', async (req, res) => {
+app.get('/api/comics/graded', async (req, res) => {
 	const gradedComicData = await prisma.graded_comics.findMany()
 	res.json(gradedComicData)
 })
