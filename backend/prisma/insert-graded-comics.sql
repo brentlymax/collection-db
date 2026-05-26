@@ -1,5 +1,4 @@
 /*
-
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
@@ -792,7 +791,13 @@ INSERT INTO `graded_comics`
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
-	("Clive Barker's Hellraiser Summer Special", "1", null, 1992, "Epic Comics", "9.8", "white", "CGC", "4247259006", "blue", "Newsstand Edition", null, null, null);
+	("Clive Barker's Hellraiser Summer Special", "1", null, 1992, "Epic Comics", "9.8", "white", "CGC", "4247259006", "blue", null, null, null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Clive Barker's Hellraiser Summer Special", "1", null, 1992, "Epic Comics", "9.8", "white", "CGC", "4644588007", "blue", "Newsstand Edition", null, null, null);
+
 
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
@@ -963,3 +968,28 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("Clive Barker's Hellraiser", "5", null, 1991, "Marvel/Epic Comics", "9.8", "white", "CGC", "4451175007", "blue", null, null, null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Clive Barker's Hellraiser", "8", null, 1991, "Marvel/Epic Comics", "9.8", "white", "CGC", "4201895007", "blue", null, "John Rheume cover.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Clive Barker's Hellraiser", "16", null, 1992, "Marvel/Epic Comics", "9.8", "white", "CGC", "4700510013", "blue", null, null, null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Dime Press", "4", 5, 1993, "Dime Press", "9.6", "white", "CGC", "1040448003", "blue", null, "Hellboy cover pre-dates first U.S. appearance.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("X-Factor", "5", 6, 1986, "Marvel Comics", "9.8", "white", "CGC", "0244958003", "blue", "Newsstand Edition", "1st app. of Apocalypse in cameo on last page. 1st app. of Stinger & Timeshadow. Tower, Frenzy, Artie & Rusty appearance.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("X-Factor", "6", 7, 1986, "Marvel Comics", "9.8", "white", "CGC", "1171311008", "blue", null, "1st full appearance of Apocalypse (En Sabah Nur). Alliance of Evil (Tower, Frenzy, Stinger, Timeshadow) appearance.", null, null);
