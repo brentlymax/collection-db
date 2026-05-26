@@ -31,9 +31,10 @@ services:
             context: ../backend
             dockerfile: dockerfile.prod
         volumes:
-            - ../backend:/app
             - /etc/letsencrypt:/etc/letsencrypt
         restart: always
+        depends_on:
+            - db-prod
 
     db-prod:
         container_name: db-prod
