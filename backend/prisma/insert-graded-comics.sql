@@ -798,7 +798,6 @@ INSERT INTO `graded_comics`
 	VALUES
 	("Clive Barker's Hellraiser Summer Special", "1", null, 1992, "Epic Comics", "9.8", "white", "CGC", "4644588007", "blue", "Newsstand Edition", null, null, null);
 
-
 INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
