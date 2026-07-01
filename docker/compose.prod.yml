@@ -54,4 +54,4 @@ volumes:
 
 networks:
     default:
-        name: ${NETWORK_NAME_PROD}
+        name: ${NETWORK_NAME}
