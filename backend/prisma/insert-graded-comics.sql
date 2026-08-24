@@ -992,3 +992,8 @@ INSERT INTO `graded_comics`
 	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
 	VALUES
 	("X-Factor", "6", 7, 1986, "Marvel Comics", "9.8", "white", "CGC", "1171311008", "blue", null, "1st full appearance of Apocalypse (En Sabah Nur). Alliance of Evil (Tower, Frenzy, Stinger, Timeshadow) appearance.", null, null);
+
+INSERT INTO `graded_comics`
+	(title, issue, published_month, published_year, publisher, grade, page_quality, grader, cert_number, label_type, variant, key_notes, signed_by, pedigree)
+	VALUES
+	("Avengers", "196", 6, 1980, "Marvel Comics", "9.8", "white", "CGC", "0297821003", "blue", null, "Origin & 1st full appearance Taskmaster. Letter from Kurt Busiek.", null, null);
