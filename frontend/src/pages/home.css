@@ -1,0 +1,119 @@
+.home {
+	position: relative;
+	display: grid;
+	align-items: end;
+	min-height: calc(100vh - 65px);
+	overflow: hidden;
+	background: #25312c;
+}
+
+.home-image-wrap,
+.home-image-wrap::after {
+	position: absolute;
+	inset: 0;
+}
+
+.home-image-wrap::after {
+	content: '';
+	background:
+		linear-gradient(90deg, rgba(20, 29, 25, 0.9) 0%, rgba(20, 29, 25, 0.62) 40%, rgba(20, 29, 25, 0.08) 75%),
+		linear-gradient(0deg, rgba(20, 29, 25, 0.65) 0%, transparent 50%);
+}
+
+.home-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	animation: home-image-in 900ms ease-out both;
+}
+
+.home-intro {
+	position: relative;
+	z-index: 1;
+	width: min(860px, 88vw);
+	padding: clamp(3rem, 9vh, 7rem) 6vw;
+	color: #fffaf0;
+	animation: home-copy-in 650ms 120ms ease-out both;
+}
+
+.home-eyebrow {
+	margin: 0 0 1rem;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.home h1 {
+	max-width: 780px;
+	margin: 0;
+	font-size: clamp(3.75rem, 8vw, 7.5rem);
+	font-weight: 500;
+	line-height: 0.92;
+	letter-spacing: 0;
+	text-wrap: balance;
+}
+
+.home-subheader {
+	margin: 1.5rem 0 0;
+	padding-left: 1.1rem;
+	border-left: 3px solid #d9aa52;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: clamp(1rem, 1.6vw, 1.3rem);
+	letter-spacing: 0;
+}
+
+@keyframes home-image-in {
+	from {
+		opacity: 0;
+		transform: scale(1.025);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes home-copy-in {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 640px) {
+	.home {
+		min-height: calc(100svh - 65px);
+	}
+
+	.home-image-wrap::after {
+		background: linear-gradient(0deg, rgba(20, 29, 25, 0.92) 0%, rgba(20, 29, 25, 0.25) 80%);
+	}
+
+	.home-image {
+		object-position: 62% center;
+	}
+
+	.home-intro {
+		width: auto;
+		padding: 3rem 1.25rem 3.5rem;
+	}
+
+	.home h1 {
+		font-size: clamp(3rem, 17vw, 5rem);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-image,
+	.home-intro {
+		animation: none;
+	}
+}
