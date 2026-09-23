@@ -21,4 +21,4 @@ prod-build:
 	docker compose -f compose.prod.yml -p ${APP_NAME_PROD} build --no-cache
 
 prod-down:
-	docker compose -f compose.prod.yml -p ${APP_NAME_PROD} down
+	docker compose -f compose.prod.yml -p ${APP_NAME_PROD} dow

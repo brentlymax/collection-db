@@ -31,11 +31,6 @@ CREATE TABLE `graded_comics` (
 -- 	pedigree		varchar(250)
 -- );
 
--- DROP TABLE IF EXISTS `pokemon_cards_graded`;
--- CREATE TABLE `pokemon_cards_graded` (
-	
--- );
-
 -- DROP TABLE IF EXISTS `magic_cards_graded`;
 -- CREATE TABLE `magic_cards_graded` (
 	

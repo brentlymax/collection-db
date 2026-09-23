@@ -5,7 +5,6 @@ import Comics from './pages/comics'
 import Contact from './pages/contact'
 import Home from './pages/home'
 import Magic from './pages/magic'
-import Pokemon from './pages/pokemon'
 import './app.css'
 
 function App() {
@@ -31,9 +30,6 @@ function App() {
 					<Link className='navigation-link' to='/magic'>
 						Magic
 					</Link>
-					<Link className='navigation-link' to='/pokemon'>
-						Pokemon
-					</Link>
 				</nav>
 			</div>
 
@@ -45,7 +41,6 @@ function App() {
 					<Route path='/comics' element={<Comics />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/magic' element={<Magic />} />
-					<Route path='/pokemon' element={<Pokemon />} />
 				</Routes>
 			</div>
 		</BrowserRouter>
