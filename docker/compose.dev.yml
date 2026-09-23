@@ -33,10 +33,7 @@ services:
         depends_on:
             - db-dev
         environment:
-            DB_HOST: db-dev
-            DB_USER: root
-            DB_PASSWORD: collection_db_1988
-            DB_NAME: collection
+            DATABASE_URL_BACKEND: ${DATABASE_URL_DEV}
 
     db-dev:
         container_name: db-dev
@@ -55,4 +52,4 @@ volumes:
 
 networks:
     default:
-        name: ${NETWORK_NAME}
+        name: ${NETWORK_NAME_DEV}

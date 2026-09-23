@@ -72,7 +72,7 @@ function GradedComicsTable() {
 	]
 
 	const [tableData, setData] = useState<GradedComic[]>()
-	const [tableError, setError] = useState<String>('')
+	const [tableError, setError] = useState<string>('')
 	const [tableLoading, setLoading] = useState(true)
 
 	useEffect(() => {

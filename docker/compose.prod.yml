@@ -35,6 +35,8 @@ services:
         restart: always
         depends_on:
             - db-prod
+        environment:
+            DATABASE_URL_BACKEND: ${DATABASE_URL_PROD}
 
     db-prod:
         container_name: db-prod
@@ -54,4 +56,4 @@ volumes:
 
 networks:
     default:
-        name: ${NETWORK_NAME}
+        name: ${NETWORK_NAME_PROD}
