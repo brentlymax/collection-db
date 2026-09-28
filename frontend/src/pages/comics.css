@@ -1,9 +1,106 @@
 .table-error,
 .table-loading {
 	padding: 2rem 0rem;
+	color: var(--page-text);
+}
+
+.table-loading {
+	text-align: center;
 }
 
 .table-box {
 	height: 100%;
 	width: 100%;
+	background: var(--table-background);
+	color: var(--page-text);
+}
+
+.table-box .MuiDataGrid-root.MuiDataGrid-root {
+	--DataGrid-containerBackground: var(--table-header);
+	--DataGrid-rowBorderColor: var(--table-border);
+	border-color: var(--table-border);
+	font-family: 'Trebuchet MS', sans-serif;
+	transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+:root[data-theme='dark'] .table-box .MuiDataGrid-root.MuiDataGrid-root {
+	color: #f4efe4;
+	background-color: transparent;
+}
+
+:root[data-theme='light'] .table-box .MuiDataGrid-root.MuiDataGrid-root {
+	color: #25312c;
+	background-color: transparent;
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-columnHeaders,
+.table-box .MuiDataGrid-root .MuiDataGrid-footerContainer,
+.table-box .MuiDataGrid-root .MuiDataGrid-cell {
+	border-color: var(--table-border);
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-columnHeader {
+	color: var(--page-text);
+	background-color: var(--table-header);
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-cell {
+	color: var(--page-text);
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-columnHeaders .MuiDataGrid-filler--horizontal {
+	background-color: var(--table-header);
+}
+
+.table-box .MuiDataGrid-columnHeaderTitle {
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-row:hover {
+	background-color: color-mix(in srgb, var(--accent-color) 10%, var(--table-background));
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-row:focus-within,
+.table-box .MuiDataGrid-root .MuiDataGrid-row.Mui-selected,
+.table-box .MuiDataGrid-root .MuiDataGrid-row.Mui-selected:hover {
+	background-color: color-mix(in srgb, var(--accent-color) 20%, var(--table-background));
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-footerContainer,
+.table-box .MuiDataGrid-root .MuiTablePagination-root,
+.table-box .MuiDataGrid-menuIconButton,
+.table-box .MuiDataGrid-sortButton,
+.table-box .MuiDataGrid-iconButtonContainer,
+.table-box .MuiDataGrid-columnHeader .MuiIconButton-root {
+	color: var(--page-text);
+}
+
+.table-box .MuiDataGrid-root .MuiDataGrid-sortButton,
+.table-box .MuiDataGrid-root .MuiDataGrid-sortIcon {
+	color: var(--accent-color);
+}
+
+.table-box .MuiDataGrid-root.MuiDataGrid-root .MuiDataGrid-sortButton {
+	background-color: transparent;
+}
+
+.table-box .MuiDataGrid-root.MuiDataGrid-root .MuiDataGrid-sortButton:hover {
+	background-color: var(--IconButton-hoverBg);
+}
+
+.table-box .MuiTablePagination-selectLabel,
+.table-box .MuiTablePagination-displayedRows {
+	color: var(--table-muted);
+}
+
+.table-box .MuiDataGrid-root.MuiDataGrid-root .MuiDataGrid-columnSeparator,
+.table-box .MuiDataGrid-root.MuiDataGrid-root .MuiDataGrid-columnSeparator--resizable:hover,
+.table-box .MuiDataGrid-root.MuiDataGrid-root .MuiDataGrid-columnSeparator--resizing {
+	color: var(--table-resize-handle);
+}
+
+.table-box .MuiDataGrid-overlay {
+	color: var(--table-muted);
+	background-color: var(--table-background);
 }

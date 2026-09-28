@@ -2,12 +2,56 @@
 	font-family: Georgia, 'Times New Roman', serif;
 	line-height: 1.5;
 	font-weight: 400;
-	color: #25312c;
-	background-color: #f4efe4;
+	color-scheme: dark;
+	color: var(--page-text);
+	background-color: var(--page-background);
+	--page-background: #18201d;
+	--page-text: #f4efe4;
+	--nav-background: #18201d;
+	--nav-border: #3b4540;
+	--nav-text: #f4efe4;
+	--toggle-background: #25312c;
+	--table-background: #202925;
+	--table-header: #25312c;
+	--table-border: #46524c;
+	--table-muted: #bdc8c2;
+	--table-resize-handle: #bdc8c2;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='light'] {
+	color-scheme: light;
+	--page-background: #f4efe4;
+	--page-text: #25312c;
+	--nav-background: #f4efe4;
+	--nav-border: #c9c1b1;
+	--nav-text: #25312c;
+	--toggle-background: #e7dfd0;
+	--table-background: #fffdf7;
+	--table-header: #e7dfd0;
+	--table-border: #c9c1b1;
+	--table-muted: #59635e;
+	--table-resize-handle: #25312c;
+}
+
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme]) {
+		color-scheme: light;
+		--page-background: #f4efe4;
+		--page-text: #25312c;
+		--nav-background: #f4efe4;
+		--nav-border: #c9c1b1;
+		--nav-text: #25312c;
+		--toggle-background: #e7dfd0;
+		--table-background: #fffdf7;
+		--table-header: #e7dfd0;
+		--table-border: #c9c1b1;
+		--table-muted: #59635e;
+		--table-resize-handle: #25312c;
+	}
 }
 
 html,
@@ -16,6 +60,12 @@ body,
 	width: 100%;
 	min-height: 100%;
 	margin: 0;
+}
+
+body {
+	background: var(--page-background);
+	color: var(--page-text);
+	transition: background-color 180ms ease, color 180ms ease;
 }
 
 a {
