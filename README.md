@@ -50,6 +50,8 @@ Database of my collections. Written as a MERN stack.
 - cd backend
 - docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/create-collection.sql
 - docker exec -i db-dev mariadb -uroot -pcollection_db_1988 collection < prisma/insert-graded-comics.sql
+- docker exec -i db-prod mariadb -uroot -pcollection_db_1988 collection < prisma/create-collection.sql
+- docker exec -i db-prod mariadb -uroot -pcollection_db_1988 collection < prisma/insert-graded-comics.sql
 - npx prisma db pull
 - npx prisma generate
 

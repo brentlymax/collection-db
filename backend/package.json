@@ -22,7 +22,7 @@
 		"@types/cors": "^2.8.19",
 		"@types/express": "5.0.6",
 		"prettier": "3.9.6",
-		"prisma": "^7.10.0",
+		"prisma": "^8.0.0-rc.17",
 		"tsx": "4.23.13",
 		"typescript": "^7.0.2"
 	}
