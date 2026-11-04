@@ -4,6 +4,81 @@ import { DataGrid } from '@mui/x-data-grid'
 import type { GridColDef } from '@mui/x-data-grid'
 import './comics.css'
 
+const tableColumns: GridColDef[] = [
+	{
+		field: 'title',
+		headerName: 'Title',
+		width: 260,
+		minWidth: 160
+	},
+	{
+		field: 'issue',
+		headerName: 'Issue',
+		width: 80,
+		minWidth: 70
+	},
+	{
+		field: 'grade',
+		headerName: 'Grade',
+		width: 90,
+		minWidth: 80
+	},
+	{
+		field: 'page_quality',
+		headerName: 'Page Quality',
+		width: 150,
+		minWidth: 130
+	},
+	{
+		field: 'grader',
+		headerName: 'Grader',
+		width: 100,
+		minWidth: 90
+	},
+	{
+		field: 'cert_number',
+		headerName: 'Cert Number',
+		width: 180,
+		minWidth: 140
+	},
+	{
+		field: 'publisher',
+		headerName: 'Publisher',
+		width: 180,
+		minWidth: 120
+	},
+	{
+		field: 'published_month',
+		headerName: 'Month',
+		width: 100,
+		minWidth: 90
+	},
+	{
+		field: 'published_year',
+		headerName: 'Year',
+		width: 90,
+		minWidth: 80
+	},
+	{
+		field: 'variant',
+		headerName: 'Variant',
+		width: 240,
+		minWidth: 140
+	},
+	{
+		field: 'key_notes',
+		headerName: 'Key Notes',
+		width: 400,
+		minWidth: 180
+	},
+	{
+		field: 'signed_by',
+		headerName: 'Signed By',
+		width: 200,
+		minWidth: 120
+	}
+]
+
 function GradedComicsTable() {
 	type GradedComic = {
 		title: string
@@ -19,57 +94,6 @@ function GradedComicsTable() {
 		key_notes: string | null
 		signed_by: string | null
 	}
-
-	const tableColumns: GridColDef[] = [
-		{
-			field: 'title',
-			headerName: 'Title'
-		},
-		{
-			field: 'issue',
-			headerName: 'Issue'
-		},
-		{
-			field: 'grade',
-			headerName: 'Grade'
-		},
-		{
-			field: 'page_quality',
-			headerName: 'Page Quality'
-		},
-		{
-			field: 'grader',
-			headerName: 'Grader'
-		},
-		{
-			field: 'cert_number',
-			headerName: 'Cert Number'
-		},
-		{
-			field: 'publisher',
-			headerName: 'Publisher'
-		},
-		{
-			field: 'published_month',
-			headerName: 'Month'
-		},
-		{
-			field: 'published_year',
-			headerName: 'Year'
-		},
-		{
-			field: 'variant',
-			headerName: 'Variant'
-		},
-		{
-			field: 'key_notes',
-			headerName: 'Key Notes'
-		},
-		{
-			field: 'signed_by',
-			headerName: 'Signed By'
-		}
-	]
 
 	const [tableData, setData] = useState<GradedComic[]>()
 	const [tableError, setError] = useState<string>('')
