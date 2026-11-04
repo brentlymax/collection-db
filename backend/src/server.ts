@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
 import { PrismaMariaDb } from '@prisma/adapter-mariadb'
@@ -9,7 +8,7 @@ const port = 3000
 const databaseUrlValue = process.env.DATABASE_URL_BACKEND
 
 if (!databaseUrlValue) {
-	throw new Error('DATABASE_URL_BACKEND is required')
+	throw new Error('DATABASE_URL_BACKEND must be supplied by the backend container environment')
 }
 
 const databaseUrl = new URL(databaseUrlValue)
@@ -30,7 +29,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/comics/graded', async (req, res) => {
-	const gradedComicData = await prisma.graded_comics.findMany()
+	const gradedComicData = await prisma.gradedComic.findMany()
 	res.json(gradedComicData)
 })
 

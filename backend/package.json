@@ -5,7 +5,13 @@
 	"type": "module",
 	"scripts": {
 		"run-dev": "tsx watch ./src/server.ts",
-		"run-prod": "tsc && node dist/server.js"
+		"run-prod": "tsc && node dist/server.js",
+		"prisma-dev": "PRISMA_ENV=dev prisma",
+		"prisma-prod": "PRISMA_ENV=prod prisma",
+		"reset-comics-dev": "tsx ./src/reset-db.ts comics dev",
+		"reset-comics-prod": "tsx ./src/reset-db.ts comics prod",
+		"reset-users-dev": "tsx ./src/reset-db.ts users dev",
+		"reset-users-prod": "tsx ./src/reset-db.ts users prod"
 	},
 	"keywords": [],
 	"author": "",
