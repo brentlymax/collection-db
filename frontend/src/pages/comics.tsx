@@ -82,8 +82,8 @@ const tableColumns: GridColDef[] = [
 function GradedComicsTable() {
 	type GradedComic = {
 		title: string
-		issue: number
-		grade: string
+		issue: string
+		grade: string | null
 		page_quality: string
 		grader: string
 		cert_number: string
@@ -108,8 +108,14 @@ function GradedComicsTable() {
 				if (!response.ok) {
 					throw new Error(`${response.status}`)
 				}
-				const jsonData = await response.json()
-				setData(jsonData)
+				const jsonData: GradedComic[] = await response.json()
+
+				// Presorting: title asc, issue asc, grade dsc
+				setData([...jsonData].sort((first, second) =>
+					first.title.localeCompare(second.title) ||
+					first.issue.localeCompare(second.issue, undefined, { numeric: true }) ||
+					(second.grade ?? '').localeCompare(first.grade ?? '', undefined, { numeric: true })
+				))
 			} catch (error: unknown) {
 				if (error instanceof Error) {
 					setError('Error response: ' + error.message)
