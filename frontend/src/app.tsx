@@ -86,7 +86,15 @@ function App() {
 		<ThemeProvider theme={muiThemes[theme]}>
 			<BrowserRouter>
 			<div className='navigation-wrapper'>
-				<nav className='navigation-bar'>
+				<nav
+					className='navigation-bar'
+					onClick={(event) => {
+						// Remove focus from clicked navigation links and buttons
+						if (event.detail > 0 && event.target instanceof Element) {
+							event.target.closest<HTMLElement>('a, button')?.blur()
+						}
+					}}
+				>
 					<div className='navigation-links'>
 						<Link className='navigation-link' to='/'>
 							Home
