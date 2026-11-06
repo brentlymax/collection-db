@@ -9,11 +9,6 @@
 }
 
 .table-box {
-	height: 100%;
-	width: 100%;
-	min-width: 0;
-	max-width: 100%;
-	overflow: hidden;
 	background: var(--table-background);
 	color: var(--page-text);
 }
